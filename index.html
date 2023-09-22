@@ -1,0 +1,194 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<title>My Website</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+</head>
+<body>
+	<nav class="navbar">
+        <ul>
+            <li class="nav-text">
+                <a href="#" class="active">Home</a>
+                <a href="#tentang">About Me</a>
+                <a href="#hobi">Hobby</a>
+				<a href="#games">Games</a>
+                <a href="#kontak">Contact</a>
+            </li>
+        </ul>
+    </nav>
+	<header class="banner">
+		<!-- masukkan foto diri pada bagian src di img-->
+        <img src="https://i.redd.it/yqd90ta3ym291.jpg" alt="profilepic" class="profilepic">
+        <h2 class="kataPengantar">Lovely to meet you mate!</h2>
+        <h1 class="kataPengantar" id="namaUtama"></h1>
+
+		<script>
+		var i = 0;
+		// masukkan nama pada variable "nama" di bawah
+		var nama = 'I am Thomas Collins';
+		var speed = 100;
+
+		function typeWriter() {
+		if (i < nama.length) {
+			document.getElementById("namaUtama").innerHTML += nama.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		}
+		}
+		typeWriter();
+		</script>
+    </header>
+	<article>
+		<section id="tentang">
+            <h1 class="judul">About me</h1>
+            <p class="isi">
+				<!-- masukkan nama, umur, hobi, dan cita-cita pada field dengan kurung siku [] di bawah-->
+                I'm a human, seriously. My age is [Data Expunged]. I was at [Data Expunged] at the time. I like [Data Expunged]. I want to be like [Data Expunged].
+            </p>
+        </section>
+		<section id="biodata">
+			<h1 class="judul">Biodata</h1>
+			<div class="bio">
+				<div class="data">
+					<h2>Name</h2>
+					<h2>Age</h2>
+					<h2>Address</h2>
+					<h2>E-mail</h2>
+				</div>
+				<div class="dataBio">
+					<!-- masukkan nama, umur, kelas, dan email pada field dengan kurung siku [] di bawah-->
+					<h2>Thomas Collins</h2>
+					<h2>[Data Expunged]</h2>
+					<h2>[Data Expunged]</h2>
+					<h2>[Data Expunged]</h2>
+				</div>
+			</div>
+        </section>
+		<section id="hobi">
+			<h1 class="judul">Hobby</h1>
+			<div class="hobiku">
+				<!-- masukkan gambar hobi di sini dengan mengcopy div di bawah, ganti src dan h2 untuk nama hobi -->
+				<div>
+					<img src="https://i0.wp.com/www.partyguise.com/wp-content/uploads/2021/01/Top-hat.jpg?resize=474%2C754&ssl=1" alt="">
+					<h2>Drinking British Tea</h2>
+				</div>
+				<div>
+					<img src="https://warthunder.com/i/opengraph-wt.jpg" alt="">
+					<h2>Waiting for my War Thunder to be updated</h2>
+				</div>
+				<div>
+					<img src="data:image/jpeg;base64,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" alt="">
+					<h2>Listening to British Music</h2>
+				</div>
+			</div>
+		</section>
+		<section id="games">
+			<h1 class="judul">Favorite Games</h1>
+			<div class="gamesku">
+				<div class="slide-container swiper">
+					<div class="slide-content">
+						<div class="card-wrapper swiper-wrapper">
+							<!-- tambahkan game di sini dengan mengcopy div card swiper-slide di bawah, ganti src untuk link gambar game, ubah name dan description untuk game yang dimasukkan -->
+							<div class="card swiper-slide">
+								<div class="image-content">
+									<span class="overlay"></span>
+		
+									<div class="card-image">
+									   <img src="https://warthunder.com/i/opengraph-wt.jpg" alt="" class="card-img">
+									</div>
+								</div>
+		
+								<div class="card-content">
+									<h2 class="name">War Thunder</h2>
+									<p class="description">[Data Expunged]</p>
+		
+									<button class="button">View More</button>
+								</div>
+							</div>
+							<div class="card swiper-slide">
+								<div class="image-content">
+									<span class="overlay"></span>
+		
+									<div class="card-image">
+										   <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png" alt="" class="card-img">
+									</div>
+								</div>
+		
+								<div class="card-content">
+									<h2 class="name">Minecraft</h2>
+									<p class="description">[Data Expunged]</p>
+		
+									<button class="button">View More</button>
+								</div>
+							</div>
+							<div class="card swiper-slide">
+								<div class="image-content">
+									<span class="overlay"></span>
+		
+									<div class="card-image">
+										 <img src="https://imgs.search.brave.com/NSAYjy-yHX1Yo2-_w3dmbkT7eCTSbsb9W68WAFa2RuU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5y/YnhjZG4uY29tLzE5/Y2JmOWNmZWZjYmIz/NjYyMjRhYjQyZmRi/Yjg5NmYx" alt="" class="card-img">
+									</div>
+								</div>
+		
+								<div class="card-content">
+									<h2 class="name">Roblox</h2>
+									<p class="description">[Data Expunged]</p>
+		
+									<button class="button">View More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next swiper-navBtn"></div>
+					<div class="swiper-button-prev swiper-navBtn"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+		<section id="kontak">
+			<h1 class="judul">Contact me!</h1>
+            <form action="#" class="formKontak">
+				<div>
+					<div class="my-2">
+						<h4>Name:</h4>
+						<input type="text" placeholder="Name . . ." class="fieldInput">
+					</div>
+					<div class="my-2">
+						<h4>Email:</h4>
+						<input type="email" placeholder="Email . . ." class="fieldInput">
+					</div>
+					<div class="my-2">
+						<h4>Subject:</h4>
+						<input type="text" placeholder="Email Subject . . ." class="fieldInput">
+					</div>
+					<div class="my-2">
+						<h4>Message:</h4>
+						<textarea type="textarea" placeholder="Message . . ." cols="53" rows="8" class="fieldInput"></textarea>
+					</div>
+				</div>
+                <input type="submit" value="Send" class="buttonKirim">
+            </form>
+		</section>
+	</article>
+
+	<footer class="px-8 py-8">
+        <h4 class="footer">Contact Me:</h4>
+        <div class="kontak">
+			<!-- masukkan gambar sosial media yang diinginkan dengan megcopy 1 line di bawah, ganti src dengan logo sosial media dan href dengan link profile sosial media kalian-->
+            <a href="https://www.discord.com/"><img src="https://images-eds-ssl.xboxlive.com/image?url=Q_rwcVSTCIytJ0KOzcjWTYl.n38D8jlKWXJx7NRJmQKBAEDCgtTAQ0JS02UoaiwRCHTTX1RAopljdoYpOaNfVf5nBNvbwGfyR5n4DAs0DsOwxSO9puiT_GgKqinHT8HsW8VYeiiuU1IG3jY69EhnsQ--&format=source" class="icon" alt="discord"></a>
+			<a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" class="icon" alt="instagram"></a>
+		</div>
+    </footer>
+</body>
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+  
+  <button class="btn" id="fullscrbtnbyisladjan">Go Fullscreen</button>
+  
+</html>
